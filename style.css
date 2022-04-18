@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    /* background-color: lightblue; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1200px;
+}
+
+.card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 22rem;
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, .2), 0 0 50px rgba(0, 0, 0, .2);
+}
+
+.sneaker {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+
+.circle {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    background: linear-gradient(
+        to right,
+        rgba(245, 70, 66, .75),
+        rgba(8, 83, 156, .75)
+    );
+    position: absolute;
+    z-index: -1;
+
+}
+
+.sneaker img {
+    width: 16rem;
+    transition: all .75s ease-out;
+}
+
+.info {
+    transform-style: preserve-3d;
+}
+.info h1 {
+    font-size: 2.5rem;
+    transition: all .75s ease-out;
+}
+
+.info h3 {
+    font-size: .9rem;
+    color: #585858;
+    font-weight: lighter;
+    padding: 1rem 0;
+    transition: all .75s ease-out;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-between;
+    transition: all .75s ease-out;
+}
+
+.sizes button {
+    padding: .5rem 1rem;
+    background: none;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+}
+
+button.active {
+    background-color: #585858;
+    color: white;
+}
+
+.purchase {
+    margin-top: 3rem;
+}
+
+.purchase button {
+    width: 100%;
+    padding: .7rem 0;
+    border-radius: 1rem;
+    color: white;
+    background-color: #f56c42;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    transition: all .75s ease-out;
+}
